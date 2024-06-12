@@ -1,0 +1,22 @@
+@import "../utils/mixins";
+
+i {
+  position: absolute;
+  right: 10%;
+  bottom: 97.2%;
+}
+.heart__full {
+  opacity: 0;
+  color: #9356dc;
+  &:hover {
+    @include hover__full;
+  }
+}
+@keyframes progress-heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

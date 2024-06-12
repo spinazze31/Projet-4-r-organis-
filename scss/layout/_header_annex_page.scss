@@ -1,0 +1,45 @@
+.logo__annex--page {
+  display: flex;
+  align-items: center;
+  height: 3.94rem;
+  .return__logo--annex--page {
+    display: flex;
+    padding-left: 1.25rem;
+  }
+  .logo__size--annex--page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo__txt--annex--page {
+    display: flex;
+    width: 12.31rem;
+    height: 2.25rem;
+  }
+}
+
+.header__img {
+  width: 100%;
+  height: 17.19rem;
+  object-fit: cover;
+}
+
+@media (min-width: 769px) {
+  .logo {
+    display: flex;
+    height: 3.94rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 3.94rem;
+  }
+
+  .header__img {
+    width: 100%;
+    height: 23.94rem;
+  }
+}

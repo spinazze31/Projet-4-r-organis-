@@ -1,0 +1,186 @@
+@import "./animation_checkbox";
+
+.container__menu {
+  width: 100%;
+  background: var(--main_color);
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  position: relative;
+  bottom: 2rem;
+  .presentation__menu {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    .title__menu--presentation {
+      font-family: var(--title_font-family);
+      font-size: 1.75rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 2.55rem;
+      text-align: left;
+      padding: 0rem 1rem 0rem 1.5rem;
+    }
+  }
+}
+
+.container__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+  .container__card--entree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    animation: loading 400ms;
+  }
+  .container__card--plate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    animation: loading 3s 400ms;
+  }
+  .container__card--dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    animation: loading 6s 400ms;
+  }
+  .title__card--menu {
+    width: 21.5rem;
+    height: 1.69rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 2.5rem 0rem 1.38rem 0rem;
+    margin-top: 0.63rem;
+    .line__title--card {
+      display: flex;
+      width: 2.5rem;
+      padding-bottom: 4px;
+      border-bottom: var(--underline_color) solid 4px;
+    }
+  }
+  .card__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 21.5rem;
+    height: 4.5rem;
+    padding: 0.94rem 0;
+    background-color: white;
+    border-radius: var(--border);
+    box-shadow: 0rem 0.25rem 0.94rem 0rem #0000001a;
+    .container__card--menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      .title__card {
+        font-size: 1.13rem;
+        font-weight: 500;
+        margin: 0;
+        padding: 0.6rem 0rem 0.6rem 1rem;
+      }
+      .subtitle__card {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        .description__card {
+          font-size: 0.94rem;
+          font-weight: 300;
+          line-height: 0.94rem;
+          margin-top: 0.31rem;
+        }
+        .price__card {
+          font-size: 0.94rem;
+          font-weight: 300;
+          line-height: 0.94rem;
+          font-weight: 700;
+          padding-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  margin-top: 0.31rem;
+}
+
+@media (min-width: 769px) {
+  .container__menu {
+    width: 80%;
+    left: 10%;
+    .presentation__menu {
+      justify-content: center;
+      .title__menu--presentation {
+        padding-right: 2.5rem;
+      }
+      i {
+        right: 21%;
+        bottom: 97%;
+      }
+    }
+  }
+
+  .container__card {
+    .title__card--menu {
+      width: 28rem;
+    }
+    .card__menu {
+      width: 28rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container__menu {
+    width: 80%;
+    left: 10%;
+    .presentation__menu {
+      display: flex;
+      justify-content: center;
+      i {
+        position: absolute;
+        right: 28%;
+        bottom: 97.2%;
+      }
+    }
+    .title__card--menu {
+      padding: 2.5rem 0rem 1.38rem 0rem;
+      width: 39.63rem;
+      .line__title--card {
+        display: flex;
+        width: 2.5rem;
+        padding-bottom: 4px;
+        border-bottom: var(--underline_color) solid 4px;
+      }
+    }
+  }
+
+  .container__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+    .card__menu {
+      width: 39.63rem;
+      height: 4.5rem;
+    }
+  }
+}

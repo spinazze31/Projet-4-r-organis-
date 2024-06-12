@@ -1,0 +1,14 @@
+.btn {
+  height: 3.13rem;
+  border-radius: 1.56rem;
+  width: 13.63rem;
+  @include restaurant__btn;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0rem 0.4rem 0.4rem 0rem black;
+  }
+  .btn__size {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

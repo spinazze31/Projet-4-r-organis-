@@ -1,0 +1,20 @@
+@import "../utils/mixins";
+
+.container__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  .btn {
+    @include order__btn;
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0rem 0.4rem 0.4rem 0rem black;
+    }
+    .btn__size {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}

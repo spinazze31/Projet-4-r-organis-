@@ -1,0 +1,58 @@
+@mixin restaurant__btn {
+  background: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
+  color: white;
+  transition: 400ms cubic-bezier((0, -0.27, 1, -0.16));
+}
+
+@mixin order__btn {
+  width: 11.63rem;
+  height: 3.13rem;
+  border-radius: 1.56rem;
+  color: white;
+  background: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
+  transition: 400ms cubic-bezier((0, -0.27, 1, -0.16));
+}
+
+@mixin hover__full {
+  opacity: 1;
+  background-clip: text;
+  transform-origin: 0%;
+  animation: progress-heart 400ms;
+}
+
+@mixin card__animation {
+  display: flex;
+  width: 1rem;
+  height: 6.4rem;
+  background-color: var(--underline_color);
+  border-top-right-radius: var(--border);
+  border-bottom-right-radius: var(--border);
+  opacity: 0;
+}
+
+@mixin card__animation {
+  display: flex;
+  width: 1rem;
+  height: 6.4rem;
+  background-color: var(--underline_color);
+  border-top-right-radius: var(--border);
+  border-bottom-right-radius: var(--border);
+  opacity: 0;
+}
+
+@mixin box__animation {
+  position: relative;
+  left: 110%;
+  top: 40%;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+@mixin box__animation--responsive {
+  position: relative;
+  left: 190%;
+  top: 40%;
+  width: 0.9rem;
+  height: 0.9rem;
+}
