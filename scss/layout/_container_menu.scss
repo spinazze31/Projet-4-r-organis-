@@ -80,6 +80,10 @@
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: 400ms;
       .title__card {
         font-size: 1.13rem;
         font-weight: 500;

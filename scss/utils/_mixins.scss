@@ -22,12 +22,11 @@
 
 @mixin card__animation {
   display: flex;
-  width: 1rem;
+  width: 0rem;
   height: 6.4rem;
   background-color: var(--underline_color);
   border-top-right-radius: var(--border);
   border-bottom-right-radius: var(--border);
-  opacity: 0;
 }
 
 @mixin card__animation {

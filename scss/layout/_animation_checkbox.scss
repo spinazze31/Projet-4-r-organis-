@@ -2,46 +2,33 @@
 
 .card__menu--animation {
   @include card__animation;
-  &:hover {
-    width: 25%;
-    opacity: 1;
-    transform-origin: 100%;
-    animation: card__full 400ms;
-  }
-  .box__menu--animation {
-    @include box__animation;
-  }
+  position: relative;
 }
+.card__menu:hover > .card__menu--animation {
+  width: 5rem;
+  opacity: 1;
+  transform-origin: 100%;
+  animation: card__full 400ms;
+}
+
+.card__menu:hover > .container__card--menu {
+  width: calc(100% - 5rem);
+}
+
+.checkbox {
+  overflow: hidden;
+  position: relative;
+  left: 30%;
+  top: 35%;
+  color: white;
+  background-clip: text;
+}
+
 @keyframes card__full {
   0% {
     transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
-  }
-}
-
-@media (min-width: 1024px) {
-  .card__menu--animation {
-    @include card__animation;
-
-    &:hover {
-      opacity: 1;
-      transform-origin: 100%;
-      animation: card__full 400ms;
-      width: 20%;
-    }
-    .box__menu--animation {
-      @include box__animation--responsive;
-    }
-  }
-
-  @keyframes card__full {
-    0% {
-      transform: scaleX(0);
-    }
-    100% {
-      transform: scaleX(1);
-    }
   }
 }
