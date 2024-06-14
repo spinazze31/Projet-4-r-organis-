@@ -28,29 +28,3 @@
   border-top-right-radius: var(--border);
   border-bottom-right-radius: var(--border);
 }
-
-@mixin card__animation {
-  display: flex;
-  width: 1rem;
-  height: 6.4rem;
-  background-color: var(--underline_color);
-  border-top-right-radius: var(--border);
-  border-bottom-right-radius: var(--border);
-  opacity: 0;
-}
-
-@mixin box__animation {
-  position: relative;
-  left: 110%;
-  top: 40%;
-  width: 0.9rem;
-  height: 0.9rem;
-}
-
-@mixin box__animation--responsive {
-  position: relative;
-  left: 200%;
-  top: 40%;
-  width: 0.9rem;
-  height: 0.9rem;
-}
