@@ -15,6 +15,11 @@ a {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 @media (min-width: 769px) {
   .main-container {
     width: 100%;
@@ -176,8 +181,6 @@ a {
 .container__card .title__card--menu {
   width: 21.5rem;
   height: 1.69rem;
-  font-size: 1rem;
-  font-weight: 300;
   padding: 2.5rem 0rem 1.38rem 0rem;
   margin-top: 0.63rem;
 }
