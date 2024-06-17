@@ -571,9 +571,6 @@ i {
   right: 9%;
   bottom: 12%;
 }
-.restaurant__card--center .restaurant__card .restaurant__card--container .heart__full--purple {
-  color: #9356dc;
-}
 .restaurant__card--center .restaurant__card .restaurant__card--container .heart__full {
   opacity: 0;
   color: #9356dc;
