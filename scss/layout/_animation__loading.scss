@@ -1,0 +1,92 @@
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  animation: opacite 300ms 2.4s forwards;
+  @keyframes opacite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-9999px);
+    }
+  }
+
+  .container__animation {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    .rectangle {
+      display: flex;
+      position: absolute;
+      width: 10px;
+      height: 20px;
+      border: solid black 1px;
+      background-color: #9356dc;
+    }
+    .r1 {
+      top: 30%;
+      left: 47%;
+    }
+    .r2 {
+      top: 34%;
+      left: 58%;
+      rotate: 45deg;
+    }
+    .r3 {
+      top: 46%;
+      left: 62%;
+      rotate: 90deg;
+    }
+    .r4 {
+      top: 58%;
+      left: 58%;
+      rotate: 135deg;
+    }
+    .r5 {
+      top: 63%;
+      left: 47%;
+      rotate: 180deg;
+    }
+    .r6 {
+      top: 58%;
+      left: 36%;
+      rotate: 225deg;
+    }
+    .r7 {
+      top: 46%;
+      left: 31%;
+      rotate: 270deg;
+    }
+    .r8 {
+      top: 34%;
+      left: 36%;
+      rotate: 315deg;
+    }
+  }
+}
+
+.rectangle {
+  animation: rotation 0.8s linear 2;
+  @for $i from 1 through 7 {
+    &--#{$i} {
+      animation-delay: 0.1s * $i;
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

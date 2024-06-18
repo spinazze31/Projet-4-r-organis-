@@ -44,6 +44,112 @@ h2 {
   --border: 0.94rem;
 }
 
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  animation: opacite 300ms 2.4s forwards;
+}
+@keyframes opacite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-9999px);
+  }
+}
+.animation .container__animation {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.animation .container__animation .rectangle {
+  display: flex;
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  border: solid black 1px;
+  background-color: #9356dc;
+}
+.animation .container__animation .r1 {
+  top: 30%;
+  left: 47%;
+}
+.animation .container__animation .r2 {
+  top: 34%;
+  left: 58%;
+  rotate: 45deg;
+}
+.animation .container__animation .r3 {
+  top: 46%;
+  left: 62%;
+  rotate: 90deg;
+}
+.animation .container__animation .r4 {
+  top: 58%;
+  left: 58%;
+  rotate: 135deg;
+}
+.animation .container__animation .r5 {
+  top: 63%;
+  left: 47%;
+  rotate: 180deg;
+}
+.animation .container__animation .r6 {
+  top: 58%;
+  left: 36%;
+  rotate: 225deg;
+}
+.animation .container__animation .r7 {
+  top: 46%;
+  left: 31%;
+  rotate: 270deg;
+}
+.animation .container__animation .r8 {
+  top: 34%;
+  left: 36%;
+  rotate: 315deg;
+}
+
+.rectangle {
+  animation: rotation 0.8s linear 2;
+}
+.rectangle--1 {
+  animation-delay: 0.1s;
+}
+.rectangle--2 {
+  animation-delay: 0.2s;
+}
+.rectangle--3 {
+  animation-delay: 0.3s;
+}
+.rectangle--4 {
+  animation-delay: 0.4s;
+}
+.rectangle--5 {
+  animation-delay: 0.5s;
+}
+.rectangle--6 {
+  animation-delay: 0.6s;
+}
+.rectangle--7 {
+  animation-delay: 0.7s;
+}
+
+@keyframes rotation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .logo__annex--page {
   display: flex;
   align-items: center;
