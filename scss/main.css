@@ -179,7 +179,7 @@ h2 {
   animation: loading 6s 400ms;
 }
 .container__card .title__card--menu {
-  width: 21.5rem;
+  width: 20rem;
   height: 1.69rem;
   padding: 2.5rem 0rem 1.38rem 0rem;
   margin-top: 0.63rem;
@@ -195,7 +195,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 21.5rem;
+  width: 20rem;
   height: 4.5rem;
   padding: 0.94rem 0;
   background-color: white;
@@ -215,6 +215,8 @@ h2 {
 .container__card .card__menu .container__card--menu .title__card {
   font-size: 1.13rem;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
   padding: 0.6rem 0rem 0.6rem 1rem;
 }
@@ -228,6 +230,9 @@ h2 {
   font-weight: 300;
   line-height: 0.94rem;
   margin-top: 0.31rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container__card .card__menu .container__card--menu .subtitle__card .price__card {
   font-size: 0.94rem;
@@ -262,7 +267,7 @@ p {
   }
   .container__menu .presentation__menu i {
     right: 21%;
-    bottom: 97%;
+    bottom: 50%;
   }
   .container__card .title__card--menu {
     width: 28rem;
@@ -283,7 +288,7 @@ p {
   .container__menu .presentation__menu i {
     position: absolute;
     right: 28%;
-    bottom: 97.2%;
+    bottom: 50%;
   }
   .container__menu .title__card--menu {
     padding: 2.5rem 0rem 1.38rem 0rem;
@@ -363,17 +368,22 @@ p {
   font-weight: 500;
 }
 
-i {
+.heart {
+  display: flex;
+  width: 3rem;
+  position: relative;
+  top: 40%;
+}
+.heart i {
   position: absolute;
   right: 10%;
-  bottom: 97.2%;
+  bottom: 50%;
 }
-
-.heart__full {
+.heart .heart__full {
   opacity: 0;
   color: #9356dc;
 }
-.heart__full:hover {
+.heart .heart__full:hover {
   opacity: 1;
   -webkit-background-clip: text;
           background-clip: text;
@@ -752,8 +762,7 @@ i {
   }
 }
 .footer__container {
-  position: relative;
-  bottom: 3rem;
+  margin-top: -2rem;
   height: 11.63rem;
   gap: 1rem;
   background-color: var(--footer_background_color);
