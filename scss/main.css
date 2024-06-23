@@ -52,7 +52,7 @@ h2 {
   height: 100%;
   background-color: white;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   animation: opacite 300ms 2.4s forwards;
 }
 @keyframes opacite {
@@ -566,6 +566,9 @@ p {
   width: 0.75rem;
   height: 1rem;
 }
+.searchbar .searchbar__txt {
+  padding-top: 0.63rem;
+}
 
 .presentation {
   display: flex;
@@ -769,8 +772,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2.5rem;
-    width: 100%;
+    gap: 1.5rem;
+    padding: 0rem 1rem;
   }
   .functioning .functioning-container .functioning__btn {
     display: flex;

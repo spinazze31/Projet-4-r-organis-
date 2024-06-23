@@ -28,6 +28,9 @@
     width: 0.75rem;
     height: 1rem;
   }
+  .searchbar__txt {
+    padding-top: 0.63rem;
+  }
 }
 
 .presentation {
@@ -228,8 +231,8 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 2.5rem;
-      width: 100%;
+      gap: 1.5rem;
+      padding: 0rem 1rem;
       .functioning__btn {
         display: flex;
         align-items: center;
