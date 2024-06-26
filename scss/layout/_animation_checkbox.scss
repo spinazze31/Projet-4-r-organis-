@@ -15,6 +15,10 @@
   width: calc(100% - 5rem);
 }
 
+.card__menu:hover > .container__card--menu h3 {
+  width: calc(100% - 2.42rem - 0.5rem - 0.8rem);
+}
+
 .checkbox {
   overflow: hidden;
   position: relative;
