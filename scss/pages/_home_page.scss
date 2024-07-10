@@ -64,6 +64,8 @@
   .functioning__title {
     padding-left: 0.94rem;
     margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }
 
@@ -73,7 +75,7 @@
   align-items: center;
   gap: 1.56rem;
   .functioning__btn {
-    width: 20.16rem;
+    width: 17rem;
     height: 4.52rem;
     border-radius: 1.25rem;
     background-color: var(--main_color);
@@ -120,7 +122,7 @@
   align-items: center;
   gap: 1.13rem;
   .restaurant__card {
-    width: 19rem;
+    width: 18rem;
     height: 15.69rem;
     border-radius: var(--border);
     background-color: white;

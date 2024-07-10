@@ -292,7 +292,7 @@ h2 {
   animation: loading 6s 400ms;
 }
 .container__card .title__card--menu {
-  width: 20rem;
+  width: 18rem;
   height: 1.69rem;
   padding: 2.5rem 0rem 1.38rem 0rem;
   margin-top: 0.63rem;
@@ -308,7 +308,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 20rem;
+  width: 18rem;
   height: 4.5rem;
   padding: 0.94rem 0;
   background-color: white;
@@ -612,6 +612,8 @@ p {
 .functioning .functioning__title {
   padding-left: 0.94rem;
   margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .functioning-container {
@@ -621,7 +623,7 @@ p {
   gap: 1.56rem;
 }
 .functioning-container .functioning__btn {
-  width: 20.16rem;
+  width: 17rem;
   height: 4.52rem;
   border-radius: 1.25rem;
   background-color: var(--main_color);
@@ -667,7 +669,7 @@ p {
   gap: 1.13rem;
 }
 .restaurant__card--center .restaurant__card {
-  width: 19rem;
+  width: 18rem;
   height: 15.69rem;
   border-radius: var(--border);
   background-color: white;
