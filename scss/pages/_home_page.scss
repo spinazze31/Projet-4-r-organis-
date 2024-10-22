@@ -148,13 +148,17 @@
         margin: 0.63rem 0rem 0.31rem 0.75rem;
       }
       i {
+        font-size: 1.5rem;
         position: absolute;
         right: 9%;
         bottom: 12%;
       }
       .heart__full {
         opacity: 0;
-        color: #9356dc;
+        background: linear-gradient(to top, #9356dc, #ff79da);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         &:hover {
           @include hover__full;
         }

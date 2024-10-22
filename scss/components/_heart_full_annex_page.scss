@@ -3,19 +3,21 @@
 .heart {
   display: flex;
   width: 3rem;
+  height: 3rem;
   position: relative;
-  top: 40%;
+  top: 60%;
   i {
     position: absolute;
     right: 10%;
     bottom: 50%;
+    font-size: 1.5rem;
   }
   .heart__full {
     opacity: 0;
-    background: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
+    background: linear-gradient(to top, #9356dc, #ff79da);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-
     &:hover {
       @include hover__full;
     }

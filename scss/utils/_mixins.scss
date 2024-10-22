@@ -17,7 +17,6 @@
 
 @mixin hover__full {
   opacity: 1;
-  background-clip: text;
   transform-origin: 0%;
   animation: progress-heart 400ms;
 }
