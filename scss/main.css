@@ -501,7 +501,7 @@ p {
 }
 .heart .heart__full {
   opacity: 0;
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  background: linear-gradient(to bottom, #9356dc -11.44%, #ff79da 123.93%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -711,7 +711,7 @@ p {
 }
 .restaurant__card--center .restaurant__card .restaurant__card--container .heart__full {
   opacity: 0;
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
