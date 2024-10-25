@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
     gap: 15px;
     animation: loading 400ms;
   }
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
     gap: 15px;
     animation: loading 3s 400ms;
   }
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
     gap: 15px;
     animation: loading 6s 400ms;
   }

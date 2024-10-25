@@ -75,7 +75,7 @@
   align-items: center;
   gap: 1.56rem;
   .functioning__btn {
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
     height: 4.52rem;
     border-radius: 1.25rem;
     background-color: var(--main_color);
@@ -122,7 +122,7 @@
   align-items: center;
   gap: 1.13rem;
   .restaurant__card {
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
     height: 15.69rem;
     border-radius: var(--border);
     background-color: white;
