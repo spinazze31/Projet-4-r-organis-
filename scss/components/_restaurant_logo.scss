@@ -4,3 +4,15 @@
   left: 70%;
   z-index: 1;
 }
+
+@media (min-width: 769px) {
+  .restaurant__logo--nouveau {
+    left: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant__logo--nouveau {
+    left: 75%;
+  }
+}

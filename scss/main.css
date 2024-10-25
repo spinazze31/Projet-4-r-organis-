@@ -525,6 +525,16 @@ p {
   z-index: 1;
 }
 
+@media (min-width: 769px) {
+  .restaurant__logo--nouveau {
+    left: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__logo--nouveau {
+    left: 75%;
+  }
+}
 .container__btn {
   display: flex;
   justify-content: center;
