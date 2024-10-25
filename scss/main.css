@@ -205,17 +205,23 @@ h2 {
   border-top-right-radius: var(--border);
   border-bottom-right-radius: var(--border);
   position: relative;
+  transition: 1s ease;
 }
 
 .card__menu:hover > .card__menu--animation {
   width: 5rem;
   opacity: 1;
   transform-origin: 100%;
-  animation: card__full 400ms;
+  transform: scaleX(1);
 }
 
 .card__menu:hover > .container__card--menu {
   width: calc(100% - 5rem);
+  transition: 800ms ease;
+}
+
+.card__menu :not(:hover) > .card__menu--animation {
+  transform: scale(0);
 }
 
 .card__menu:hover > .container__card--menu h3 {
@@ -232,14 +238,6 @@ h2 {
           background-clip: text;
 }
 
-@keyframes card__full {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 .container__menu {
   width: 100%;
   background: var(--main_color);
@@ -274,6 +272,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(100% - 40px);
   gap: 15px;
   animation: loading 400ms;
 }
@@ -281,6 +280,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(100% - 40px);
   gap: 15px;
   animation: loading 3s 400ms;
 }
@@ -288,11 +288,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(100% - 40px);
   gap: 15px;
   animation: loading 6s 400ms;
 }
 .container__card .title__card--menu {
-  width: 18rem;
+  width: 100%;
   height: 1.69rem;
   padding: 2.5rem 0rem 1.38rem 0rem;
   margin-top: 0.63rem;
@@ -308,7 +309,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 18rem;
+  width: 100%;
   height: 4.5rem;
   padding: 0.94rem 0;
   background-color: white;
@@ -323,7 +324,6 @@ h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  transition: 400ms;
 }
 .container__card .card__menu .container__card--menu .title__card {
   font-size: 1.13rem;
@@ -433,17 +433,23 @@ p {
   border-top-right-radius: var(--border);
   border-bottom-right-radius: var(--border);
   position: relative;
+  transition: 1s ease;
 }
 
 .card__menu:hover > .card__menu--animation {
   width: 5rem;
   opacity: 1;
   transform-origin: 100%;
-  animation: card__full 400ms;
+  transform: scaleX(1);
 }
 
 .card__menu:hover > .container__card--menu {
   width: calc(100% - 5rem);
+  transition: 800ms ease;
+}
+
+.card__menu :not(:hover) > .card__menu--animation {
+  transform: scale(0);
 }
 
 .card__menu:hover > .container__card--menu h3 {
@@ -460,14 +466,6 @@ p {
           background-clip: text;
 }
 
-@keyframes card__full {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 .btn {
   height: 3.13rem;
   border-radius: 1.56rem;
@@ -628,7 +626,7 @@ p {
   gap: 1.56rem;
 }
 .functioning-container .functioning__btn {
-  width: 17rem;
+  width: calc(100% - 40px);
   height: 4.52rem;
   border-radius: 1.25rem;
   background-color: var(--main_color);
@@ -674,7 +672,7 @@ p {
   gap: 1.13rem;
 }
 .restaurant__card--center .restaurant__card {
-  width: 18rem;
+  width: calc(100% - 40px);
   height: 15.69rem;
   border-radius: var(--border);
   background-color: white;

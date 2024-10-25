@@ -3,16 +3,22 @@
 .card__menu--animation {
   @include card__animation;
   position: relative;
+  transition: 1s ease;
 }
 .card__menu:hover > .card__menu--animation {
   width: 5rem;
   opacity: 1;
   transform-origin: 100%;
-  animation: card__full 400ms;
+  transform: scaleX(1);
 }
 
 .card__menu:hover > .container__card--menu {
   width: calc(100% - 5rem);
+  transition: 800ms ease;
+}
+
+.card__menu :not(:hover) > .card__menu--animation {
+  transform: scale(0);
 }
 
 .card__menu:hover > .container__card--menu h3 {
@@ -26,13 +32,4 @@
   top: 35%;
   color: white;
   background-clip: text;
-}
-
-@keyframes card__full {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
 }
